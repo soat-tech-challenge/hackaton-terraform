@@ -23,7 +23,7 @@ resource "aws_ecs_service" "this" {
   name                              = "Hackaton_ECS_${var.id}_Service"
   cluster                           = var.ecs_cluster_id
   task_definition                   = aws_ecs_task_definition.this.arn
-  desired_count                     = 1
+  desired_count                     = 2
   launch_type                       = "FARGATE"
   scheduling_strategy               = "REPLICA"
   force_new_deployment              = true

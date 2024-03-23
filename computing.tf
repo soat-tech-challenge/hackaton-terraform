@@ -65,6 +65,6 @@ module "clockin_service" {
   subnet_ids          = aws_subnet.public_subnets[*].id
   security_groups_ids = [aws_vpc.main.default_security_group_id]
 
-  lb_container_port   = 8004
+  lb_container_port   = 8002
   lb_target_group_arn = aws_lb_target_group.ecs_clockin_svc_tg.arn
 }

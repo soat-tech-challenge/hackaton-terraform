@@ -27,7 +27,7 @@ resource "aws_lb_target_group" "ecs_clockin_svc_tg" {
 
   health_check {
     interval = 10
-    path     = "/clockin/actuator/health"
+    path     = "/clock-in/actuator/health"
   }
 
   tags = {

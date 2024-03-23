@@ -29,7 +29,7 @@ resource "aws_lb_listener_rule" "clockin_svc_rule" {
 
   condition {
     path_pattern {
-      values = ["/clockin/*"]
+      values = ["/clock-in/*"]
     }
   }
 
